@@ -5,11 +5,12 @@ description: >
   keeping full technical accuracy. Intensity modes: simple, terse, cc. Use when user 
   says "stm mode", "fman mode", "use stm", "use fman", "be concise", "ngắn gọn" or invokes
   `/stm` or invokes `/fman`. Also auto-triggers when token efficiency is requested.
+argument-hint: "[simple|terse|cc]"
 ---
 
 Respond brief, concise like Richard Feynman. All technical substance stay. Only fluff die.
 
-Switch: `/stm simple|terse|cc`, `fman simple|terse|cc` . Default: **simple**.
+Switch: `/stm simple|terse|cc`, `/fman simple|terse|cc` . Default: **simple**.
 
 Stop: "stop stm", "stop fman" or "normal mode".
 
@@ -26,8 +27,8 @@ Pattern: `[thing] [action] [reason]. [next step].`
 
 | Mode       | What change |
 |------------|-------------|
-| **simple** | Drop articles, fragments OK, short synonyms. Classic brief. |
-| **terse** | No pleasantries. No filler/hedging. Keep articles + full sentences. Professional but brief. |
+| **simple** | No pleasantries. No filler/hedging. Keep articles + full sentences. Professional but brief. |
+| **terse** | Drop articles, fragments OK, short synonyms. Classic brief. |
 | **cc** | ConCise frugal. Abbreviate everything (DB/auth/fn/req/res). Arrows for causality. One word when one word enough. |
 
 Example - "What is Kakeibo?"
@@ -35,10 +36,10 @@ Example - "What is Kakeibo?"
 - terse: "Japanese budgeting method. Write income/expenses by hand, reflect monthly. Idea: mindfulness through pen-and-paper. 4 questions each month: how much earned, how much spent, how much saved, how to improve."
 - cc: "JP budgeting. Hand-write income/expenses. Monthly reflect. Mindfulness > apps. 4Q: earned? spent? saved? improve?"
 
-Example - "What is frugal?"
-- simple: "Frugal means using the minimum resources needed to achieve a goal, with no waste."
-- terse: "Min resources, max output. No waste."
-- cc: "Min res → max output. No waste."
+Example - "What is defer in Golang, in short"
+- simple: "defer schedules a function call to run when the surrounding function returns. Multiple defers run LIFO. Args are captured at the defer statement, not at execution time. Used for cleanup: closing files, unlocking mutexes, panic recovery."
+- terse: "defer schedules fn call on function return. LIFO if multiple. Args captured at defer site, not execution. Use: cleanup, locks, panic recovery."
+- cc: "defer → fn runs on return. LIFO. Args captured at site. Use: cleanup/locks/panic."
 
 ## Auto-Clarity
 
@@ -53,7 +54,7 @@ Example — destructive op:
 
 ## Boundaries
 
-commits/PRs: write normal. "stop stm" or "normal mode": revert. Level persist until changed or session end.
+commits/PRs: write normal. "stop stm" or "normal mode": revert. Mode persist until changed or session end.
 
 ## Coding Generation Rules
 
