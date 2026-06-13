@@ -1,0 +1,11 @@
+.idea/
+.understand-anything/
+## minimal here, already handled by global
+*.log
+*.swp
+*.lock
+*.out
+.DS_Store
+Thumbs.db
+~$*
+
