@@ -69,10 +69,10 @@ Use try-with-resources + AutoCloseable instead.
 | Mode | Response | Words | Tokens | % shorter |
 |------|----------| ----- | ------ | --------- |
 | simple | "finalize() — Object method, GC calls before collecting. Timing unpredictable, never guaranteed. Deprecated Java 9+. Use AutoCloseable + try-with-resources instead." | 22 | 30 | 88% |
-| terse  | "finalize() — GC calls it before collecting an object. Timing unpredictable, deprecated Java 9+. Use AutoCloseable instead." | 20 | 28 | 89% |
-| cc    | "finalize() → GC calls pre-collect. Timing: unpredictable. Deprecated: Java 9+. Use: AutoCloseable + try-with-resources." | 18 | 24 | 91% |
+| terse | "finalize() — GC calls it before collecting an object. Timing unpredictable, deprecated Java 9+. Use AutoCloseable instead." | 20 | 28 | 89% |
+| cc | "finalize() → GC calls pre-collect. Timing: unpredictable. Deprecated: Java 9+. Use: AutoCloseable + try-with-resources." | 18 | 24 | 91% |
 
----
+--- 
 
 ## Exceptions
 
@@ -91,6 +91,6 @@ Normal stm resumes immediately after the critical part.
 
 - Code: efficient, simple and standardized if possible (skill rules).
 - Commits, and PRs: always written normally regardless of level.
-- Level persists across the session until changed.
+- Mode persists across the session until changed.
 - `stop stm` or `stop fman` or `normal mode` exits stm entirely.
 
