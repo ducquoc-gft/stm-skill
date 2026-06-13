@@ -8,7 +8,7 @@ Inspired by [cc-sl](https://github.com/ducquoc-gft/cc-sl), [understand-anything]
 
 ## What It Does
 
-Switches LLM's response style to simple, concise brief as Feynman technique. No need Pleasantries nor Articles. Filler gone. Hedging gone. Technical substance stays intact. Code blocks and error messages always quoted exactly.
+Switches LLM's response style to simple, concise brief as Feynman technique. No need Articles nor Filler. Pleasantries gone. Hedging gone. Technical substance stays intact. Code blocks and error messages always quoted exactly.
 <details>
 <summary>Usefulness: cuts collectively tokens out 55%-92%</summary>
  Simply efficient, reduce concentration disruption.</details>
@@ -40,7 +40,7 @@ Then /reload-plugins , or reboot new session.
 
 ---
 
-## Short Token Man Modes
+## STM Modes
 
 Switch anytime with `/stm <mode>`. Default is **simple**.
 
@@ -54,7 +54,7 @@ Switch anytime with `/stm <mode>`. Default is **simple**.
 
 ## Quick Example
 
-**Prompt:** "What is finalize in Java, in short"
+**Prompt:** "What is finalize in Java" then "What is finalize in Java, in short"
 
 <details>
 <summary>Normal response without "in short": ~260 tokens, with "in short": ~35 tks -> 86% shorter</summary>
