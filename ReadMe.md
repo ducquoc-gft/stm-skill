@@ -15,7 +15,7 @@ Switches LLM's response style to simple, concise brief as Feynman technique. No 
 
 --- 
 
-## Skill Installation
+## Installation
 
 If already has NodeJs/NPX: ```npx skills add ducquoc-gft/stm-skill```
 
@@ -28,7 +28,7 @@ Then /reload-plugins , or reboot new session.
 
 ---
 
-## Trigger Phrases
+## Trigger
 
 - `/stm`
 - `use stm`
@@ -52,7 +52,7 @@ Switch anytime with `/stm <mode>`. Default is **simple**.
 
 ---
 
-## Quick Example
+## Example
 
 **Prompt:** "What is finalize in Java" then "What is finalize in Java, in short"
 
@@ -67,14 +67,14 @@ Use try-with-resources + AutoCloseable instead.
 </details>
 
 | Mode | Response | Words | Tokens | % shorter |
-|-------|----------| ----- | ------ | --------- |
-| simple | "finalize() is a method on Object called by the GC before collecting an object — intended for cleanup, but timing is unpredictable and it's deprecated since Java 9. Use try-with-resources + AutoCloseable instead." | 22 | 30 | 88% |
+|------|----------| ----- | ------ | --------- |
+| simple | "finalize() — Object method, GC calls before collecting. Timing unpredictable, never guaranteed. Deprecated Java 9+. Use AutoCloseable + try-with-resources instead." | 22 | 30 | 88% |
 | terse  | "finalize() — GC calls it before collecting an object. Timing unpredictable, deprecated Java 9+. Use AutoCloseable instead." | 20 | 28 | 89% |
 | cc    | "finalize() → GC calls pre-collect. Timing: unpredictable. Deprecated: Java 9+. Use: AutoCloseable + try-with-resources." | 18 | 24 | 91% |
 
 ---
 
-## Auto-Clarity Exceptions
+## Exceptions
 
 stm mode pauses automatically for:
 
