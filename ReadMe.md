@@ -1,8 +1,6 @@
 ## STM-skill
 
-Simple Token Man - [stm](https://github.com/ducquoc-gft/stm) alias: fman (i.e. Feynman).
-
-Inspired by [cc-sl](https://github.com/ducquoc-gft/cc-sl), [understand-anything](https://github.com/Lum1104/Understand-Anything).
+Simple Token Man - [stm](https://github.com/ducquoc-gft/stm-skill) alias: fman (i.e. Feynman).
 
 ---
 
@@ -93,4 +91,8 @@ Normal stm resumes immediately after the critical part.
 - Commits, and PRs: always written normally regardless of level.
 - Mode persists across the session until changed.
 - `stop stm` or `stop fman` or `normal mode` exits stm entirely.
+
+--- 
+
+Inspired by [cc-sl](https://github.com/ducquoc-gft/cc-sl), [understand-anything](https://github.com/Lum1104/Understand-Anything).
 
