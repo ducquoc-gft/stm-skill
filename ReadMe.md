@@ -94,5 +94,5 @@ Normal stm resumes immediately after the critical part.
 
 --- 
 
-Inspired by [cc-sl](https://github.com/ducquoc-gft/cc-sl), [understand-anything](https://github.com/Lum1104/Understand-Anything).
+Inspired by [cc-sl](https://github.com/ducquoc-gft/cc-sl), [gpt-oss-sonnet](https://ollama.com/ducquoc/gpt-oss-sonnet).
 
