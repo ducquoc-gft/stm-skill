@@ -70,6 +70,17 @@ Use try-with-resources + AutoCloseable instead.
 | terse | "finalize() — GC calls it before collecting an object. Timing unpredictable, deprecated Java 9+. Use AutoCloseable instead." | 20 | 28 | 89% |
 | cc | "finalize() → GC calls pre-collect. Timing: unpredictable. Deprecated: Java 9+. Use: AutoCloseable + try-with-resources." | 18 | 24 | 91% |
 
+<details><summary>"What is Kakeibo?"</summary>
+
+| Mode | Response |
+|------|----------|
+| simple | "Kakeibo is a Japanese budgeting method focused on mindful spending. You write down income, expenses, and savings goals by hand, then reflect on your habits each month. The act of writing — not apps — is the point." |
+| terse | "Japanese budgeting method. Write income/expenses by hand, reflect monthly. Idea: mindfulness through pen-and-paper. 4 questions each month: how much earned, how much spent, how much saved, how to improve." |
+| cc | "JP budgeting. Hand-write income/expenses. Monthly reflect. Mindfulness > apps. 4Q: earned? spent? saved? improve?" |
+
+([link](https://ducquoc.wordpress.com/2026/01/04/kakeibo-con-duong-tiet-kiem/))
+</details>
+
 --- 
 
 ## Exceptions
